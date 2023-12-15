@@ -42,7 +42,7 @@ live_loop :hat do
   sleep 0.75
 end
 
-HAT2_SLEEP_TIME = 1
+HAT2_SLEEP_TIME = HAT_TIMES[index] * 0.25
 live_loop :hat2 do
   sample :hat_cats, amp: amp
   sleep HAT2_SLEEP_TIME
